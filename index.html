@@ -3,330 +3,427 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P5-TM13A</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-P5-TM25</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 13A 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 25 - 5to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle-input">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fas fa-moon"></i>
+                <span id="global-timer">⏱️ 40:00</span>
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
             <ul>
-                <li><a href="#activity-0">📝</a></li>
-                <li><a href="#activity-1">1</a></li>
-                <li><a href="#activity-2">2</a></li>
-                <li><a href="#activity-3">3</a></li>
-                <li><a href="#activity-4">4</a></li>
-                <li><a href="#activity-5">5</a></li>
+                <li><a href="#activity-0">📝 De un Vistazo</a></li>
+                <li><a href="#activity-1">1. Intro</a></li>
+                <li><a href="#activity-2">2. A.I. Gym</a></li>
+                <li><a href="#activity-3">3. Brain Spark</a></li>
+                <li><a href="#activity-4">4. Gnius STORM</a></li>
+                <li><a href="#activity-5">5. Evidencias</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes comprendan cómo combinar percepción (A.I. Lens) y acción (mecanismo) para un comportamiento de "apuntar y actuar". Que diseñen una estrategia para que su robot pateador detecte un objetivo, se alinee y patee, generando el plan con Xolo.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
-                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
-                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y comandos.</li>
-                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y planificación en equipo.</li>
-                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Compartición de planes y retroalimentación.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un diseño de estrategia y un plan GCS seleccionado por el equipo para un robot goleador, listo para ser implementado en la Sesión 13B.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-13).</li>
-                                        <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes (robot pateador ya construido).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet y MakeCode.</li>
-                                                <li>Tener los robots pateadores de los equipos listos.</li>
-                                                <li>Tener la presentación de diapositivas (1-13) lista y en orden.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisa el flujo de la sesión, los diálogos y los tiempos.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Micro:Bit, Kit Nezha Pro y Smart A.I. Lens para detectar la posición X de un objeto y realizar una secuencia de alineación y pateo para comprender la percepción espacial y los límites de la visión artificial.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                        </div>
+                        <pre id="main-prompt">Explícame cómo una IA puede ayudar a un robot a “apuntar” usando visión, aunque no entienda qué es un juego o una pelota. Analicemos cómo la posición del objeto (izquierda, centro, derecha) permite decidir hacia dónde moverse. Guíame para diseñar conceptualmente la estrategia del robot: primero detectar, luego alinearse y finalmente patear. Ayúdame a reflexionar de forma ética: ¿qué pasa si la IA detecta mal y patea en el momento incorrecto?</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Percepción Espacial: Es la capacidad de la IA para entender dónde están las cosas (izquierda, derecha o centro) usando una cámara, como si fuera un ojo digital que mide distancias.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar la cámara inteligente para detectar la posición de una pelota y mover el robot hacia ella.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes distancias y colores de pelotas para entender las limitaciones de la visión.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:bit (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Kit Nezha Pro (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Smart A.I. Lens (1 por cada 4 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión PlanetX-AI instalada</label>
+                        <label><input type="checkbox"> Pelotas de colores o pelotas de ping-pong</label>
+                        <label><input type="checkbox"> Cinta adhesiva para marcar la portería</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'PlanetX-AI' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> No tocar el lente de la cámara, manipular el robot con cuidado en superficies planas y verificar que los cables Nezha estén bien conectados.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre percepción espacial y cómo la IA ayuda a apuntar (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si la cámara A.I. Lens no reconoce la pelota:</strong> Revisar la iluminación del salón (evitar luz directa o muy tenue). Asegurarse de que la pelota sea del color que configuraron en el código.</li>
+                            <li><strong>Si el robot Nezha no se mueve:</strong> Verificar que la batería esté cargada y el interruptor en 'ON'. Revisar que los motores estén conectados en los puertos correctos (M1, M2).</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
 
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>Crea un ambiente acogedor y activa a la IA para la sesión de estrategia.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola, estrategas del deporte robótico! Hoy vamos a darle a nuestros robots el 'sentido del juego'. Antes de empezar, activen a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y sus gustos.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
-                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está contestando y está listo para la misión. Si Xolo no les ha respondido, ¡avísame!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos ojos de futbolista profesional a sus robots!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Percepción espacial y puntería asistida por IA.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A usar la visión artificial con la A.I. Lens para que el robot encuentre la pelota y anote un gol.</p>
+                        <p><strong>Aplicación real:</strong> Los brazos robóticos en las fábricas de reciclaje usan esta tecnología para identificar y separar objetos según su posición y forma.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
 
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
-                <p>Presenta el desafío de la secuencia "VER -> ALINEAR -> ACTUAR" y establece el objetivo de la clase.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Planteando el Desafío ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Utiliza la analogía del penalti para explicar la secuencia.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Piensen en un jugador de fútbol a punto de tirar un penalti. ¿Qué hace? Primero, ve la pelota y la portería. Segundo, se posiciona y alinea su cuerpo. Tercero, patea. Esa secuencia de 'VER -> ALINEAR -> ACTUAR' es exactamente lo que vamos a diseñar hoy para nuestro robot. Usaremos la A.I. Lens para 'ver' la pelota, la información de su posición X para 'alinear' al robot, y finalmente, le daremos la orden de 'actuar' y patear."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: "I Can Statement" ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo la IA usa coordenadas X para saber si algo está a la izquierda o derecha.</li>
+                            <li>Introduce el concepto de límites de la visión artificial y por qué a veces la IA se confunde.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar la Smart A.I. Lens para detectar la posición de objetos.</li>
+                            <li>Aprender sobre cómo la IA toma decisiones basadas en lo que ve.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Hoy nos convertiremos en entrenadores que enseñan estrategia a sus robots. Al final de esta sesión, podrán decir: 'Yo entiendo la secuencia lógica para apuntar y patear, y mi equipo tiene un diseño de estrategia y un plan para nuestro robot goleador.'"</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar la Smart A.I. Lens para alinear el robot y entender la percepción espacial.</p>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Hola a todos! Hoy vamos a convertir a sus robots en cracks del fútbol. Pero antes, necesitamos entender cómo es que un robot puede 'ver' una pelota y decidir hacia dónde moverse para anotar un gol. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Saludénlo y él les explicará cómo la IA usa la visión para apuntar y detectar posiciones. Pregúntenle todo lo que quieran sobre cómo la cámara inteligente ayuda a los robots a tomar decisiones espaciales, ¡él es el experto!</p>
                     </div>
                 </div>
             </div>
 
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
-                <p>Guía a los alumnos para que aprendan sobre la robótica guiada por visión y la lógica en capas.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Concepto Clave - Robótica Guiada por Visión ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Indica a los alumnos que interactúen con Xolo para entender el concepto.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Es hora de entrar al AI GYM! Pídele a Xolo que les explique qué es la 'robótica guiada por visión'. Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes sobre la robótica guiada por visión.'</strong> Xolo les explicará que la IA se convierte en los ojos y el cerebro del apuntador.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: El Plan para Apuntar y Actuar ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Guía la atención de los alumnos hacia la lógica en capas que Xolo presentará.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Robots futbolistas con Nezha y A.I. Lens conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique la detección y alineación con la pelota.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar la A.I. Lens y el Kit Nezha.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar la A.I. Lens al puerto I2C de la Nezha y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a idear un proyecto aplicado en Python donde el robot use A.I. Lens para detectar una pelota y alinearse antes de patear. Quiero una vibe (ej. “robot futbolista inteligente”). Define las reglas: qué hace si la pelota está a la izquierda, al centro o a la derecha. Luego genera el GCS y conviértelo en código Python para ejecutarlo, de acuerdo a tu entrenamiento con Nezha, A.I. Lens y micro:bit."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que entienden el concepto, necesitan la estructura para su plan. Xolo les va a mostrar cómo la lógica se construye en capas, como un pastel. Presten atención.</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">"La lógica se construye en capas:
-`SI (la IA ve la "pelota"):`
-    // Dentro, viene la lógica de alineación
-    `fijar variable "posicion_x" a get info: X`
-    `SI (posicion_x < 150): girar a la izquierda`
-    `SINO SI (posicion_x > 170): girar a la derecha`
-    // Y aquí viene la magia, la tercera capa:
-    `SINO: // ¡Está en el centro! ¡PATEAR!`
-        `// Mover el servo de pateo`
-`SINO:`
-    `// Si no ve la pelota, se queda quieto o busca.`"</pre>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿El robot logra detectar la pelota cada vez que la pones frente a él?</li>
+                            <li>¿Qué sucede si mueves la pelota muy rápido de un lado a otro frente al lente?</li>
+                            <li>¿Funciona igual el pateo si la pelota está muy cerca vs. si está a un metro de distancia?</li>
+                            <li>Si la cámara detecta la pelota a la izquierda, ¿cómo sabe el robot exactamente cuánto debe girar para estar alineado?</li>
+                            <li>¿Qué pasaría si pones un objeto del mismo color que la pelota pero con una forma diferente? ¿La IA se confundiría?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a construir nuestro propio robot futbolista inteligente. El flujo es sencillo: primero platiquen con XOLO para definir el 'vibe' de su robot y las reglas de juego. Por ejemplo, podrían programar que si la pelota está a la izquierda, el robot gire a la izquierda hasta centrarla, y cuando esté justo en medio, ¡patee con fuerza usando un motor de Nezha! XOLO les dará el GCS, ustedes lo pasan a bloques en MakeCode y luego lo prueban en la cancha real. No olviden revisar las preguntas de experimentación para ver qué pasa si cambian la distancia de la pelota. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el pateo básico. ¿Puedes enseñarme cómo hacer que mi robot busque la pelota girando sobre su propio eje si no la encuentra en su campo de visión?"</p>
                     </div>
                 </div>
             </div>
 
+            <!-- ACTIVIDAD 4: GNIUS STORM -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
-                <p>Proceso de diseño de estrategias de juego: ideación individual, puesta en común y selección en equipo.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Formación de Equipos ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Organiza a los alumnos en sus equipos de trabajo de 4 personas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien, es hora del Brain Spark! Lo primero es reunirse en sus equipos de 4 personas. Hoy continuarán trabajando con el robot pateador que ya construyeron.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Ideación y Plan Individual ⏰ 8 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Guía a cada alumno para que diseñe una estrategia de goleador y obtenga su plan de Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Ahora que están en equipos, cada uno diseñe la estrategia de su goleador. ¿Buscará una pelota de color o un objeto aprendido? ¿Qué hará después de patear? Descríbanle su 'idea' personal a Xolo y él les ayudará a escribir el plan. Si no se les ocurre nada, pueden usar el comando: <strong>'Exploremos ideas juntos para una estrategia de robot goleador.'</strong></p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">// Ejemplo de plan para Pateador Inteligente
-POR SIEMPRE:
-    SI (Image contains color card(s) "ROJO"):
-        fijar variable "posicion_x" a get color card("ROJO") info: X
-        SI (posicion_x < 150):
-            // Girar
-        SINO SI (posicion_x > 170):
-            // Girar
-        SINO: // ¡Alineado!
-            // Avanzar y PATEAR
-            nezha_motor_M1_velocidad(50) //...
-            ESPERAR 0.5 segundos
-            nezha_servo_S1_angulo(90) //...
-            ESPERAR 2 segundos
-    SINO:
-        // Buscar pelota
-    FIN SI</pre>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Puesta en Común y Selección del Plan ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositivas 10 y 11) Facilita que los equipos compartan sus estrategias y seleccionen una para implementar.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué decisiones de alineación tomó su robot para patear bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué condiciones de luz o distancia hicieron que tu robot pateara mejor? ¿Qué te sorprendió?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">"¡Excelentes jugadas! Ahora, dentro de su equipo, compartan las estrategias que cada uno diseñó. Después, como equipo, decidan la estrategia final de su campeón. ¿Será un jugador metódico o uno rápido y agresivo? ¡Decidan y guarden ese plan maestro!"</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi robot usó la posición X para centrar la pelota. Me sorprendió que si la pelota era de otro color, a veces no la veía."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Comparte las estrategias de los goleadores y reflexiona sobre la lógica del programa.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Anuncio de Estrategias ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 12) Pide a un portavoz de cada equipo que explique la estrategia de su robot.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     ¡Llegamos al Gnius STORM! Pide a un portavoz de cada equipo que explique la estrategia de su robot goleador. Por ejemplo: "El nuestro girará en el sitio hasta encontrar la pelota, y una vez que la vea, se lanzará hacia adelante y pateará".</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Reflexión Grupal ⏰ 2 minutos</h3>
-                            <p>Lanza una pregunta de reflexión para toda la clase.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    ¡Geniales proyectos! Ahora, una pregunta para todos: <strong>"¿Por qué es importante la condición 'SINO' (la que se activa cuando la pelota está centrada) en este programa? ¿Qué pasaría si solo tuviéramos las condiciones de giro?"</strong> (Escucha un par de respuestas).
-                                </p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Cierre y Próximos Pasos ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 13) Cierra la sesión y conecta con la siguiente clase.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Planes de juego listos! Tienen la estrategia y la lógica para crear el robot más completo hasta ahora. En la próxima sesión, implementarán este 'cerebro' en su atleta y probaremos su puntería. ¡Preparen las porterías!"</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
